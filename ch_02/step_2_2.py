@@ -15,7 +15,7 @@ if __name__ == "__main__":
     if not fnmatch(filename, "2024년*월.xlsx"):
       continue
     df_raw = pd.read_excel(
-      xlsx_path, 
+      xlsx_path,
       sheet_name="Sheet1", 
       usecols="B:E", 
       skiprows=2
